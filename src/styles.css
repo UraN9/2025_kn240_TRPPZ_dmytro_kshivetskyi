@@ -63,3 +63,36 @@ li:nth-child(even) {
     padding: 20px;
     font-size: 20px;
 }
+.adaptive-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.child {
+    height: 200px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 200px;
+    font-size: 24px;
+    flex: 1;
+    margin: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .adaptive-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .child {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .child {
+        width: 30%;
+    }
+}
