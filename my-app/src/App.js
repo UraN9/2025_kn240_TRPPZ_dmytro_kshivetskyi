@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import MyFunctionComponent from "./MyFunctionComponent";
 import MyClassComponent from "./MyClassComponent";
+import ChildComponent from "./ChildComponent";
 
 function App() {
   return (
@@ -13,6 +14,12 @@ function App() {
             <p>Ласкаво просимо!</p>
             <MyFunctionComponent />
             <MyClassComponent />
+        </div>
+        <div>
+            <h1>React State & Props</h1>
+            <ChildComponent initialValue={0} />
+            <ChildComponent initialValue={10} />
+            <ChildComponent initialValue={100} />
         </div>
         <p>
           Edit <code>src/App.js</code> and save to reload.

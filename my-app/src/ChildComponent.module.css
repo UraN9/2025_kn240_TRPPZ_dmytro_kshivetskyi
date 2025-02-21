@@ -1,0 +1,23 @@
+.child {
+    border: 2px solid #2196f3;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #2379c0;
+  }
+  
+  .child button {
+    background-color: #479de3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+  }
+  
+  .child button:hover {
+    background-color: #1976d2;
+  }
+  
